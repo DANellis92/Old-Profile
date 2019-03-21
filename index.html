@@ -11,155 +11,232 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Jua|Raleway+Dots" rel="stylesheet">
-    <link rel="stylesheet" href="portfolioExample/css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
 
     <!--  Navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <a class="navbar-brand" href="#header">Table of Contents</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Projects</a>
-                <a class="nav-item nav-link" href="#">About</a>
+                <a class="nav-item nav-link active" href="#projects">Projects <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#about">About</a>
+                <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#myModal" id="contact">Get in
+                    touch</a>
             </div>
         </div>
     </nav>
     <!-- Header -->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4">THE BOOK OF DAN</h1>
-            <p class="lead">A chronicle of my journey towards mastering Javascript!</p>
+    <header>
+        <div class="jumbotron jumbotron-fluid bg-dark text-white">
+            <div class="card bg-dark text-white">
+                <div class="container">
+                    <img src="../portfolioExample/assets/img/black-and-white-book-pages-159872.jpg" class="card-img"
+                        alt="...">
+                    <div class="card-img-overlay">
+                        <h1 class="display-4">THE BOOK OF DAN</h1>
+                        <p class="lead">A chronicle of my journey towards mastering Javascript!</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
     <!-- Projects  -->
+    <section id="projects" class="projects">
 
-    <div class="card-deck">
-        <div class="card">
-            <div class="embed-responsive embed-responsive-1by1">
-                <iframe class="embed-responsive-item" <iframe height="291" style="width: 100%;" scrolling="no"
-                    title="CSS Creature is Sleepy Code Monkey"
-                    src="//codepen.io/dvdnellis/embed/VRKQzo/?height=291&theme-id=0&default-tab=result" frameborder="no"
-                    allowtransparency="true" allowfullscreen="true">
-                    See the Pen <a href='https://codepen.io/dvdnellis/pen/VRKQzo/'>CSS Creature is Sleepy Code
-                        Monkey</a> by David
-                    (<a href='https://codepen.io/dvdnellis'>@dvdnellis</a>) on <a href='https://codepen.io'>CodePen</a>.
-                </iframe>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">The first encounter!</h5>
-                <p class="card-text">Its easy to be humble regarding the first project I created, it's not that
-                    impressive. I'd be lying if I said it didn't take me HOURS to whip this hodgepodge of HTML, CSS, and
-                    JS into it's final form. I like it though because it reminds of how far I've come since my early
-                    days.</p>
-                <a class="btn btn-dark" href="https://codepen.io/dvdnellis/" role="button">MY CODEPEN</a>
+        <div class="card-deck">
+            <div class="card">
+                <div class="embed-responsive embed-responsive-1by1">
+                    <iframe class="embed-responsive-item" <iframe height="291" style="width: 100%;" scrolling="no"
+                        title="CSS Creature is Sleepy Code Monkey"
+                        src="//codepen.io/dvdnellis/embed/VRKQzo/?height=291&theme-id=0&default-tab=result"
+                        frameborder="no" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://codepen.io/dvdnellis/pen/VRKQzo/'>CSS Creature is Sleepy Code
+                            Monkey</a> by David
+                        (<a href='https://codepen.io/dvdnellis'>@dvdnellis</a>) on <a
+                            href='https://codepen.io'>CodePen</a>.
+                    </iframe>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">The first encounter!</h5>
+                    <p class="card-text">Its easy to be humble regarding the first project I created, it's not that
+                        impressive. I'd be lying if I said it didn't take me HOURS to whip this hodgepodge of HTML, CSS,
+                        and
+                        JS into it's final form. I like it though because it reminds of how far I've come since my early
+                        days.</p>
 
+                    <a class="btn btn-dark" href="https://codepen.io/dvdnellis/" role="button">MY
+                        CODEPEN</a>
+
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="embed-responsive embed-responsive-1by1">
+                    <iframe class="embed-responsive-item" <iframe height="291" style="width: 100%;" scrolling="no"
+                        title="Web Tutorial" src="https://danellis92.github.io/TutorialWebsite/website.html"
+                        frameborder="no" allowtransparency="true" allowfullscreen="true">
+                        See the Pen <a href='https://danellis92.github.io/TutorialWebsite/website.html'>
+                            (<a href='https://danellis92.github.io/TutorialWebsite/website.html'>@dvdnellis</a>) on <a
+                                href='https://danellis92.github.io/TutorialWebsite/website.html'>CodePen</a>.
+                    </iframe>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Could've read more of these..</h5>
+                    <p class="card-text">This poorly adjusted gem is the first tutorial webpage that I created, intended
+                        to
+                        teach a few basic Javascript concepts. Adjusting for view
+                        width is obviously my forte. In fact I'm fairly certain my teacher Autumn called me a idol
+                        savant!!
+                        High praise to be sure. You can get a closer look by clicking the button!</p>
+
+                    <a class="btn btn-dark" href="https://danellis92.github.io/TutorialWebsite/website.html"
+                        role="button">YES, THIS ONE</a>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/pexels-photo-1972569.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Octopals API</h5>
+                    <p class="card-text">This project was a tough one, especially considering it was built in my 3rd
+                        week! I used an API from Blizzard to create search tool that accessed information from the World
+                        of Warcraft guild that I used to pal around with. (excuse the pun). If you want to take a look,
+                        use
+                        the button below, its scaling is also 100% amazing with no issues.</p>
+
+                    <a class="btn btn-dark" href="https://octo-api.firebaseapp.com/" role="button">YOU'RE GETTING
+                        GOOD AT THIS</a>
+
+                </div>
             </div>
         </div>
-        <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-    </div>
+
+    </section>
     <!-- About -->
+    <section class="about" id="about" p-t>
 
+        <div class="media">
+            <img src="./assets/img/my big chair now boi.jpg" class="align-self-start mr-2" alt="...">
+            <div class="media-body">
+                <h5 class="mt-0 text-white"">Get to know me!</h5>
+                <p class=" text-white">My story isn't a particularly exciting one, but it's led to who I am today, and
+                    I'm pretty proud of that. I didn't always know I'd be a developer, in fact if someone had asked me 5
+                    years ago what one even did I wouldn't have been able to give an accurate answer. I'm so early in my
+                    development as a developer but despite my short time in the field I feel like I've learned an
+                    incredible amount and tapped into a passion I didn't think I'd ever have. As I grow as a developer
+                    I'm excited to continuously update this portfolio. It will not only be a way for me to demonstrate
+                    my aquired skills in the field and allow readers to get a sense of my personality but a way to
+                    measure my own growth. Thanks for stopping by my portfolio, I hope that you learned about who I am
+                    as a developer and person!</p>
+                    <p class="text-white">If you would like to check out my resume you can find it here:
+                        <a class="btn btn-link"
+                            href="https://docs.google.com/document/d/1YersNF2r8qMxEETrXQkjD6jJuPSIjdARvRoK3839G4E/edit?usp=sharing."
+                            target="_blank"> Resume
+                        </a>
+                    </p>
+                    <p class="text-white">If you're interested in my LinkedIn, well you're out of
+                        luck because it doesnt
+                        exist yet.</p>
+            </div>
+        </div>
+
+    </section>
     <!-- Contacts -->
     <!-- Button to Open the Modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-        Open modal
-    </button>
+    <section class="contr" id="contr">
+        <div class="container" mt-3>
+            <div class="mx-auto" style="width: 300px;">
+                <p class="text-white">If you have any questions or are interested enough to interview me you can contact
+                    me here. Thanks
+                    again for stopping by and I look forward to hearing from everyone who comes across my portfolio</p>
 
-    <!-- The Modal -->
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="contact">
+                    Get in touch!
+                </button>
 
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Modal Heading</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
 
-                <!-- Modal body -->
-                <div class="modal-body">
-                    <section id="contact">
-                        <div class="container">
-                            <br>
-                            <br>
-                            <h2 class="text-center text-uppercase">Contact Me</h2>
-                            <div class="row">
-                                <div class="col-12">
-                                    <form action="https://formspree.io/danellisdesign@gmail.com" method="POST">
-                                        <div class="control-group">
-                                            <div class="form-group">
-                                                <label>Name</label>
-                                                <input type="text" class="form-control" placeholder="Your Name"
-                                                    id="name" required
-                                                    data-validation-required-message="Please enter your name"
-                                                    name="name">
-                                                <p class="help-block text-danger"></p>
-                                            </div>
-                                        </div>
-                                        <div class="control-group">
-                                            <div class="form-group">
-                                                <label>Email Address</label>
-                                                <input type="email" class="form-control" placeholder="Your Email"
-                                                    id="email" required
-                                                    data-validation-required-message="Please enter your email"
-                                                    name="_replyto">
-                                                <p class="help-block text-danger"></p>
-                                            </div>
-                                        </div>
-                                        <div class="control-group">
-                                            <div class="form-group">
-                                                <textarea class="form-control" rows="7" placeholder="Your Message"
-                                                    id="message" required
-                                                    data-validation-required-message="Please leave a message"
-                                                    name="message"></textarea>
-                                                <p class="help-block text-danger"></p>
-                                            </div>
-                                        </div>
-                                        <div class="text-center">
-                                            <div id="success"></div>
-                                            <button type="submit" class="btn btn-lg btn-black">
-                                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                                                Send Message
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title"></h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <section id="contact">
+                                    <div class="container">
+                                        <br>
+                                        <br>
+                                        <h2 class="text-center text-uppercase">Contact Me</h2>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <form action="https://formspree.io/danellisdesign@gmail.com"
+                                                    method="POST">
+                                                    <div class="control-group">
+                                                        <div class="form-group">
+                                                            <label>Name</label>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Your Name" id="name" required
+                                                                data-validation-required-message="Please enter your name"
+                                                                name="name">
+                                                            <p class="help-block text-danger"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <div class="form-group">
+                                                            <label>Email Address</label>
+                                                            <input type="email" class="form-control"
+                                                                placeholder="Your Email" id="email" required
+                                                                data-validation-required-message="Please enter your email"
+                                                                name="_replyto">
+                                                            <p class="help-block text-danger"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <div class="form-group">
+                                                            <textarea class="form-control" rows="7"
+                                                                placeholder="Your Message" id="message" required
+                                                                data-validation-required-message="Please leave a message"
+                                                                name="message"></textarea>
+                                                            <p class="help-block text-danger"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <div id="success"></div>
+                                                        <button type="submit" class="btn btn-lg btn-black">
+                                                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                                            Send Message
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
                         </div>
-                    </section>
-
+                    </div>
                 </div>
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
-
             </div>
         </div>
-    </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
